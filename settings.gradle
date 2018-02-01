@@ -1,0 +1,5 @@
+/*
+ * Copyright (c) 2018 Dharan Aditya <dharan.aditya@gmail.com>
+ */
+
+include ':app'

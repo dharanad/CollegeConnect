@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018 Dharan Aditya <dharan.aditya@gmail.com>
+  -->
+
+<resources>
+    <integer name="anim_duration_medium">5</integer>
+</resources>

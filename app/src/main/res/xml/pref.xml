@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018 Dharan Aditya <dharan.aditya@gmail.com>
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Notifications">
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_notification_default"
+            android:key="@string/pref_notification_key"
+            android:summaryOff="@string/pref_summary_off"
+            android:summaryOn="@string/pref_summary_on"
+            android:title="@string/pref_notification_title" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_assignment_default"
+            android:key="@string/pref_assignment_key"
+            android:summaryOff="@string/pref_summary_off"
+            android:summaryOn="@string/pref_summary_on"
+            android:title="@string/pref_assignment_title" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_exam_default"
+            android:key="@string/pref_exam_key"
+            android:summaryOff="@string/pref_summary_off"
+            android:summaryOn="@string/pref_summary_on"
+            android:title="@string/pref_exam_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:summary="1.0.0 Pre Alpha"
+            android:title="App Version" />
+    </PreferenceCategory>
+</PreferenceScreen>

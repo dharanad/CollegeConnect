@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018 Dharan Aditya <dharan.aditya@gmail.com>
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.dharanaditya.collegeconnect.ui.DetailActivity">
+
+    <TextView
+        android:id="@+id/tv_detail_date"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8dp"
+        tools:text="30/10/18" />
+
+    <TextView
+        android:id="@+id/tv_detail_discipline_info"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="8dp"
+        tools:text="III ECE D" />
+
+    <LinearLayout
+        android:id="@+id/placeholder_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detail_date"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            tools:text="Title" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:alpha="0.42"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_detail_message"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/placeholder_title"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_black"
+        android:padding="8dp"
+        android:textAlignment="textStart"
+        tools:text="@string/sample_message" />
+
+    <TextView
+        android:id="@+id/tv_detail_author"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_detail_message"
+        android:layout_marginTop="8dp"
+        tools:text="HOD ECE" />
+
+    <LinearLayout
+        android:id="@+id/placeholder_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detail_author"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:textAlignment="textStart" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:alpha="0.42"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_detail_due_date"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeholder_info"
+        android:layout_marginTop="4dp"
+        tools:text="Due Date is 28/22/2018" />
+
+</RelativeLayout>
