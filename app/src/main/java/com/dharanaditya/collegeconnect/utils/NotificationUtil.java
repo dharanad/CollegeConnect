@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class NotificationUtil {
 
-    public static final int NOTIFICATION_ID = 0x001;
+    private static final int NOTIFICATION_ID = 0x001;
     private static final String TAG = NotificationUtil.class.getSimpleName();
 
     public static void showNotification(Context context, Notification notification) {

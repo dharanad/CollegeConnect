@@ -16,9 +16,9 @@ import java.util.ArrayList;
  */
 
 public class FeedViewerAdapter extends FragmentStatePagerAdapter {
-    private String[] titles = {"Notification", "Assignment", "Examination"};
+    private final String[] titles = {"Notification", "Assignment", "Examination"};
 
-    private ArrayList<Fragment> mFragments;
+    private final ArrayList<Fragment> mFragments;
 
     public FeedViewerAdapter(FragmentManager fm, ArrayList<Fragment> fragmentArrayList) {
         super(fm);

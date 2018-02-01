@@ -87,11 +87,6 @@ public class MainActivity extends AppCompatActivity implements FirebaseAuth.Auth
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
     protected void onDestroy() {
         super.onDestroy();
         FirebaseAuth.getInstance().removeAuthStateListener(this);

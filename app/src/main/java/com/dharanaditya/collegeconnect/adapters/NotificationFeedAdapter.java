@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
 public class NotificationFeedAdapter extends FirestoreRecyclerAdapter<NotificationFeed, NotificationFeedAdapter.NotificationViewHolder> {
 
     private static final String TAG = NotificationFeedAdapter.class.getSimpleName();
-    private OnListItemClickListener mOnListItemClickListener;
+    private final OnListItemClickListener mOnListItemClickListener;
 
     /**
      * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link

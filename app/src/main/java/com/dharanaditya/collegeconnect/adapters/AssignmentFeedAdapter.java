@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
 public class AssignmentFeedAdapter extends FirestoreRecyclerAdapter<AssignmentFeed, AssignmentFeedAdapter.AssignmentViewHolder> {
 
     private static final String TAG = AssignmentFeedAdapter.class.getSimpleName();
-    private OnListItemClickListener mOnListItemClickListener;
+    private final OnListItemClickListener mOnListItemClickListener;
 
     /**
      * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
