@@ -76,9 +76,7 @@ public class NotificationUtil {
         examFeed.setAuthor(data.get("author"));
         examFeed.setYear(data.get("year"));
         examFeed.setBranch(data.get("branch"));
-        examFeed.setStartDate(new Date(data.get("startDate")));
         examFeed.setTimestamp(new Date(data.get("timestamp")));
-        examFeed.setSubject(data.get("subject"));
         Log.d(TAG, "Exam Feed Built : " + examFeed.toString());
         return examFeed;
     }

@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements FirebaseAuth.Auth
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menu_open_admin) {
-            Log.d(TAG, "onOptionsItemSelected: Admin Console");
+            startActivity(new Intent(this, AdminActivity.class));
             return true;
         }
         return onOptionsItemSelected(item);
@@ -146,8 +146,8 @@ public class MainActivity extends AppCompatActivity implements FirebaseAuth.Auth
             } else {
                 if (response.getErrorCode() == ErrorCodes.NO_NETWORK) {
                     new AlertDialog.Builder(this)
-                            .setTitle("No Internet Connectivity")
-                            .setMessage("You need internet connectivity to login to the app. Please enable you'r internet connection and retry")
+                            .setTitle("Connection Error")
+                            .setMessage("Check your internet connection ans try again.")
                             .setPositiveButton("Retry", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {

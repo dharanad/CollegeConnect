@@ -32,31 +32,17 @@ public class ExamFeed {
 
     private String branch;
     private String year;
-    private String subject;
-    private Date startDate;
 
     public ExamFeed() {
     }
 
-    public ExamFeed(String title, String message, String author, String uid, String branch, String year, String subject, Date startDate) {
+    public ExamFeed(String title, String message, String author, String uid, String branch, String year) {
         this.title = title;
         this.message = message;
         this.author = author;
         this.uid = uid;
         this.branch = branch;
         this.year = year;
-        this.subject = subject;
-        this.startDate = startDate;
-    }
-
-    public ExamFeed(String title, String message, String author, String uid, String branch, String year, Date startDate) {
-        this.title = title;
-        this.message = message;
-        this.author = author;
-        this.uid = uid;
-        this.branch = branch;
-        this.year = year;
-        this.startDate = startDate;
     }
 
     public Date getTimestamp() {
@@ -123,19 +109,4 @@ public class ExamFeed {
         this.year = year;
     }
 
-    public String getSubject() {
-        return subject;
-    }
-
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
-
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
 }
